@@ -24,7 +24,7 @@ GitHub source: [contracts/BKR.sol](contracts/BKR.sol).
 | Admin privileges | Review actual code and deployed bytecode for owner, mint, pause, blacklist and upgrade paths | Pending |
 | Transfer fee | Confirm pair-only 0.5% buy and sell fee in verified source and real transactions | Pending |
 | LP lock | Successful BscScan transaction confirms 2.676564962783454401 Cake-LP transferred to PinkLock V2 on 9 Nov 2026; interface reports lock until 9 Dec 2026. Total LP supply, lock percentage and current withdrawal state still require verification. | Transaction verified from BscScan screenshots; lock share pending |
-| Holder concentration | Publish holder snapshot and real, independent ownership evidence | Pending |
+| Holder concentration | BscScan Holders screenshot dated 17 Nov 2026 shows 5 addresses and approximately 99.9995% held by treasury. Independence of holders unverified. | Snapshot documented; concentration unresolved |
 | Liquidity | Publish current pool reserves and independent liquidity evidence | Pending |
 | Market discovery | Verify pair visibility on DexScreener and other aggregators | Pending |
 | Project control | Publish public-address signature proof without disclosing private keys | Pending |
@@ -40,6 +40,15 @@ GitHub source: [contracts/BKR.sol](contracts/BKR.sol).
 - LP transferred: 2.676564962783454401 Pancake LP tokens (Cake-LP)
 - BscScan action summary displays lock until 9 Dec 2026.
 - **Not yet proven:** proportion of LP supply locked, whether other LP positions exist, and live lock state. LP tokens are not BKR tokens.
+
+## Holder snapshot (17 November 2026, user-provided BscScan screenshot)
+
+- Total holder addresses: **5** (addresses do not necessarily equal independent owners).
+- Treasury `0x3Fa0a06d3C79Cba755cC324f40001a8e66619CFC`: approximately **99,999,502.89 BKR** (~99.9995% of fixed supply).
+- PancakeSwap V2 BKR pool: **490.3789 BKR**.
+- Other holder balances displayed: **3.4054**, **3.3205**, and **0.0000 BKR** (last value rounded by explorer display).
+- This is an extremely concentrated distribution; no claim of decentralization or independently controlled holder addresses is made.
+- Pool BKR reserve alone does not determine total liquidity value or LP lock percentage; WBNB reserve and LP supply require separate verification.
 
 ## Prior reported findings (historical, not live measurements)
 
