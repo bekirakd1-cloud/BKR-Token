@@ -23,12 +23,23 @@ GitHub source: [contracts/BKR.sol](contracts/BKR.sol).
 | Build reproducibility | BscScan displays Solidity v0.8.24+commit.e11b9ed9, optimizer 200 runs, EVM Paris. Reproduce bytecode from GitHub copy and compare. | Settings confirmed from BscScan screenshot; independent build pending |
 | Admin privileges | Review actual code and deployed bytecode for owner, mint, pause, blacklist and upgrade paths | Pending |
 | Transfer fee | Confirm pair-only 0.5% buy and sell fee in verified source and real transactions | Pending |
-| LP lock | Verify PinkLock contract, token, amount, beneficiary and unlock time directly on-chain | Pending |
+| LP lock | Successful BscScan transaction confirms 2.676564962783454401 Cake-LP transferred to PinkLock V2 on 9 Nov 2026; interface reports lock until 9 Dec 2026. Total LP supply, lock percentage and current withdrawal state still require verification. | Transaction verified from BscScan screenshots; lock share pending |
 | Holder concentration | Publish holder snapshot and real, independent ownership evidence | Pending |
 | Liquidity | Publish current pool reserves and independent liquidity evidence | Pending |
 | Market discovery | Verify pair visibility on DexScreener and other aggregators | Pending |
 | Project control | Publish public-address signature proof without disclosing private keys | Pending |
 | Independent audit | Obtain third-party report, if any; do not claim an audit without one | Pending |
+
+## PinkLock transaction evidence (17 November 2026 screenshot review)
+
+- Transaction: https://bscscan.com/tx/0xd4ddc1bc1893318b4a452e51e11b1ef17aa6cebdde4a9036306373ca9f4591dc
+- Status: Success; block 132634237
+- Timestamp displayed: 9 Nov 2026, 18:42:16 UTC
+- Sender: `0x3Fa0a06d3C79Cba755cC324f40001a8e66619CFC`
+- Recipient: PinkLock V2, `0x407993575c91ce7643a4d4cCACc9A98c36e1BBE`
+- LP transferred: 2.676564962783454401 Pancake LP tokens (Cake-LP)
+- BscScan action summary displays lock until 9 Dec 2026.
+- **Not yet proven:** proportion of LP supply locked, whether other LP positions exist, and live lock state. LP tokens are not BKR tokens.
 
 ## Prior reported findings (historical, not live measurements)
 
