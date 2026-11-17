@@ -65,3 +65,16 @@ The founder has **approved this allocation plan**, but **no on-chain transfers, 
 - Define precise start and end timestamps and confirm whether additional fees received by treasury remain accessible.
 - Show exact on-chain transaction parameters to the founder for wallet authorization. No secret phrase/private key sharing.
 - Verify resulting lock transaction on BscScan and publish evidence.
+
+
+## Token lock provider preliminary review — 17 November 2026
+
+PinkSale's official PinkLock documentation describes simple token locks with an explicit token contract, beneficiary/owner, amount, UTC unlock date, token approval and lock transactions:
+- https://docs.pinksale.finance/pinklock/create-a-lock
+- https://docs.pinksale.finance/pinklock/how-to-unlock
+
+**Preliminary compatibility observation only:** The GitHub BKR.sol code charges the 0.5% fee on transfers involving the cached canonical BKR/WBNB pair; ordinary treasury-to-locker token transfers appear fee-free. This must be validated against deployed bytecode and actual lock contract behavior before approving a 50m transfer. PinkSale docs caution about taxed-token lock compatibility and cite differing locker addresses across documentation versions. Do not assume a particular locker address is safe or current based on documentation alone.
+
+**STOP / execution gate:** Do not approve or send 50,000,000 BKR until the precise BNB-chain locker contract and its current implementation are verified on-chain, the treasury has confirmed control and sufficient BNB gas, the owner/beneficiary and exact UTC unlock time are checked, and a qualified independent security review has assessed the lock and BKR transfer behavior. The user must review the wallet transaction. No lock was created by this documentation update.
+
+**Additional review:** Verify BKR transfer accounting on self-transfers involving the trading pair and treasury, and the LP fee mechanics; source code comments alone are not security evidence.
