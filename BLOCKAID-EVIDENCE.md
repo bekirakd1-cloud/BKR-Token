@@ -9,12 +9,18 @@
 
 This document is a working evidence index, **not** a completed security attestation. All claims should be independently confirmed on-chain before sending to Blockaid.
 
+## BscScan verification evidence (17 November 2026)
+
+User-provided BscScan contract page screenshot displays **Source Code Verified — Exact Match**, contract name **BKR**, compiler **v0.8.24+commit.e11b9ed9**, optimizer **Yes with 200 runs**, EVM **paris**, license **MIT**. This verifies BscScan's published source against the deployed contract; it does **not** by itself prove that the separately uploaded GitHub file has been byte-for-byte compared or independently compiled.
+
+GitHub source: [contracts/BKR.sol](contracts/BKR.sol).
+
 ## Evidence and actions
 
 | Topic | Evidence / next action | Status |
 | --- | --- | --- |
-| Deployed source | Obtain the exact verified source and all imports from BscScan | Pending |
-| Build reproducibility | Capture compiler version, optimization, EVM target, constructor arguments and metadata; compare deployed bytecode | Pending |
+| Deployed source | BscScan displays Source Code Verified: Exact Match; supplied BKR.sol copied into this repository. Confirm exact text parity independently. | BscScan verified; GitHub parity pending |
+| Build reproducibility | BscScan displays Solidity v0.8.24+commit.e11b9ed9, optimizer 200 runs, EVM Paris. Reproduce bytecode from GitHub copy and compare. | Settings confirmed from BscScan screenshot; independent build pending |
 | Admin privileges | Review actual code and deployed bytecode for owner, mint, pause, blacklist and upgrade paths | Pending |
 | Transfer fee | Confirm pair-only 0.5% buy and sell fee in verified source and real transactions | Pending |
 | LP lock | Verify PinkLock contract, token, amount, beneficiary and unlock time directly on-chain | Pending |
