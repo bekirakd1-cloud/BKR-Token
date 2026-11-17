@@ -43,3 +43,25 @@ The prior 80m/20m split and the later 30m founder suggestion are discussion scen
 
 ### Treasury income monitoring
 The daily 21:00 Türkiye-time BKR report tracks BKR-denominated buy/sell fees at treasury `0x3Fa0a06d3C79Cba755cC324f40001a8e66619CFC`, distinguishes fees from ordinary transfers, and labels unverified estimates. No automatic TL withdrawal is enabled.
+
+
+## Founder-approved allocation proposal — 17 November 2026
+
+The founder has **approved this allocation plan**, but **no on-chain transfers, token locks, or liquidity deposits have been performed** as a result of the approval.
+
+| Purpose | BKR | % of supply | Intended treatment |
+| --- | ---: | ---: | --- |
+| Founder reserve | 50,000,000 | 50% | Proposed 12-month lock, subject to verified lock contract and exact unlock parameters |
+| Market and liquidity reserve | 20,000,000 | 20% | Staged use based on market depth and real funding; not automatically added to pool |
+| Project development | 15,000,000 | 15% | Milestone-based use, with public reporting |
+| Community distribution | 15,000,000 | 15% | Genuine, transparent staged distribution to independent recipients |
+| **Total** | **100,000,000** | **100%** | |
+
+**Critical:** These are accounting intentions, not four existing wallets or four independently held allocations. The treasury's current concentration remains unchanged until actual, verifiable events occur. The 12-month lock period has not started. The old 80m/20m proposal is superseded. The existing PinkLock LP lock is separate from this proposed BKR token lock.
+
+### Before implementing the founder lock
+- Confirm treasury ownership/control, exact spendable balance, and that 50m BKR is not already subject to any other obligations.
+- Select and independently review the token-lock contract, chain, fee, beneficiary, revocability and withdrawal mechanics.
+- Define precise start and end timestamps and confirm whether additional fees received by treasury remain accessible.
+- Show exact on-chain transaction parameters to the founder for wallet authorization. No secret phrase/private key sharing.
+- Verify resulting lock transaction on BscScan and publish evidence.
