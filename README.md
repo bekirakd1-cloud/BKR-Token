@@ -21,6 +21,11 @@ This repository is being prepared for independent verification. **The project-su
 
 Project-reported compilation settings (pending verification): Solidity 0.8.24; optimizer enabled with 200 runs; EVM Paris.
 
+
+## Latest Blockaid correspondence (18 November 2026)
+
+Blockaid's response acknowledges a reported 50% BKR treasury-token lock but **retains the Spam classification** due to negligible usable liquidity, concentrated beneficial ownership, and limited independent market recognition. The separate Cake-LP lock is **not** the treasury-token lock. The treasury-lock transaction and live state have not yet been independently confirmed in this repository. See [18 November evidence reconciliation](BLOCKAID-RECONCILIATION-2026-11-18.md) for evidence tiers and outstanding proofs. Earlier proposed-lock statements below are historical and must not be read as current on-chain status.
+
 ## Evidence checklist
 
 - [x] Publish the project-supplied Solidity source in [BKR.sol](BKR.sol) (no constructor arguments reported); independently compare to BscScan source and compiler input.
