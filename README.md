@@ -6,6 +6,15 @@ BscScan verified source: https://bscscan.com/address/0x3f9079DD3C32a39A7eDa8e348
 
 Blockaid case: #1568125
 
+## Project links (project-reported; independently verify)
+
+- Website: https://bkr-token-bekir.musicalgala1.chatgpt.site/ (availability and ownership not independently verified)
+- Telegram: https://t.me/BKRTokenOfficial (ownership not independently verified)
+- GitHub: https://github.com/bekirakd1-cloud/BKR-Token
+- Contract explorer: https://bscscan.com/token/0x3f9079DD3C32a39A7eDa8e348C00e32f80D1eF70
+
+These links are provided for transparency, not as proof of an audit, endorsement, liquidity, or safety.
+
 ## Verification status
 
 This repository is being prepared for independent verification. **The exact deployed Solidity source and reproducible bytecode matching evidence have not yet been published here.** This README is not a security audit or a claim that the token is safe.
