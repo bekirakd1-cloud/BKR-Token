@@ -1,3 +1,5 @@
+> **STATUS UPDATE — 18 November 2026:** This document contains historical observations and/or proposed actions. Blockaid's later correspondence acknowledges a reported 50% BKR treasury lock, but its exact transaction and current on-chain state remain independently unverified here. The Cake-LP lock is a separate asset. Blockaid's Spam classification remains active. See [reconciled evidence](BLOCKAID-RECONCILIATION-2026-11-18.md). Do not treat earlier 'not executed' statements as a current confirmation that no treasury lock exists.
+
 # BKR Token — Blockaid evidence register
 
 Case: **#1568125**  
